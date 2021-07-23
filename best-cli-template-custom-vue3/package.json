@@ -1,0 +1,15 @@
+{
+  "name": "best-cli-template-custom-vue3",
+  "version": "1.0.0",
+  "description": "vue3自定义模板",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "fs-extra": "^10.0.0",
+    "glob": "^7.1.7",
+    "inquirer": "^8.1.2"
+  }
+}
