@@ -4,7 +4,7 @@ const glob = require('glob')
 const ejs = require('ejs')
 const inquirer = require('inquirer')
 
-function install(options) {
+async function install(options) {
   const projectPrompt = []
   const descriptionPrompt = {
     type: 'input',
@@ -23,7 +23,7 @@ function install(options) {
   };
   projectPrompt.push(descriptionPrompt);
   const projectInfo = await inquirer.prompt(projectPrompt);
-  options.projectInfo.description = projectInfo.description
+  options.projectInfo.description = projectInfo.componentDescrition
   try {
     const { sourcePath, targetPath, templateInfo } = options
     fse.ensureDirSync(sourcePath);
@@ -36,9 +36,6 @@ function install(options) {
 
   } catch (error) {
     throw error;
-  } finally {
-    spinner.stop(true);
-    log.success('模版安装成功');
   }
 }
 
