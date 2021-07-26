@@ -1,6 +1,6 @@
 {
   "name": "best-cli-template-custom-vue3",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "vue3自定义模板",
   "keywords": [],
   "author": "",
@@ -11,5 +11,9 @@
     "fs-extra": "^10.0.0",
     "glob": "^7.1.7",
     "inquirer": "^8.1.2"
-  }
+  },
+  "files": [
+    "template/**",
+    "index.js"
+  ]
 }
