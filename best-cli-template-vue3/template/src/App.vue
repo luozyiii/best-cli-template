@@ -1,5 +1,5 @@
 <template>
-  <div>vue3 template(version 1.0.1)</div>
+  <div>vue3 template(version 1.0.4)</div>
 </template>
 
 <script>
