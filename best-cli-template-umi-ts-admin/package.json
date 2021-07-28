@@ -1,0 +1,9 @@
+{
+  "name": "best-cli-template-umi-ts-admin",
+  "version": "1.0.0",
+  "description": "umi + ts中后台项目模板",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
