@@ -1,0 +1,12 @@
+{
+  "name": "best-cli-template-utils",
+  "version": "1.0.0",
+  "description": "基于rollup开发的工具函数模板",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "template/**"
+  ]
+}
