@@ -6,6 +6,13 @@ export default defineConfig({
     name: 'Umi中后台项目模板',
     logo: 'https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png',
   },
+  // publicPath: '/',
+  links: [
+    {
+      rel: 'icon',
+      href: 'https://gw.alipayobjects.com/zos/antfincdn/r3d46eFZ7D/method-draw-image.ico',
+    },
+  ],
   nodeModulesTransform: {
     type: 'none',
   },
