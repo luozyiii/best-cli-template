@@ -1,6 +1,6 @@
 {
-  "name": "best-cli-template-umi-ts-admin",
-  "version": "1.0.0",
+  "name": "<%= name %>",
+  "version": "<%= version %>",
   "private": true,
   "scripts": {
     "start": "umi dev",
