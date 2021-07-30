@@ -18,7 +18,7 @@ const api: any = [
     hideInMenu: true,
   },
   {
-    path: '/home',
+    path: '/',
     name: '首页',
     icon: 'home',
     component: '@/pages/index',

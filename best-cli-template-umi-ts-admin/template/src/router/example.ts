@@ -6,12 +6,12 @@ const api = [
     routes: [
       {
         path: 'example1',
-        name: '示例1',
+        name: '基础用法',
         component: '@/pages/example/example1',
       },
       {
         path: 'example2',
-        name: '示例2',
+        name: '权限菜单',
         component: '@/pages/example/example2',
         access: 'canAccessAdmin', // 此菜单 管理员可见
       },

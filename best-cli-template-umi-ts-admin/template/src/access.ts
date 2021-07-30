@@ -1,6 +1,6 @@
-import { history } from 'umi';
+import { InitialState, history } from 'umi';
 
-export default function (initialState: any) {
+export default function (initialState: InitialState) {
   const { role, isLogin } = initialState;
 
   // 登录拦截

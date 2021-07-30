@@ -1,6 +1,10 @@
 import { useState, useCallback } from 'react';
+import { useModel } from 'umi';
 
 export default function useAuthModel() {
+  const { initialState, loading, error, refresh, setInitialState } = useModel('@@initialState');
+
+  console.log('initialState', initialState);
   const [user, setUser] = useState({
     name: 'leslie',
     mobile: '1888xxx',
