@@ -5,5 +5,6 @@ export function getInitialState() {
     name: 'Leslie Luo',
     avatar: avatarSrc,
     role: 'admin',
+    isLogin: true, // 是否登录
   };
 }
