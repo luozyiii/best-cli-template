@@ -1,12 +1,10 @@
 import { Card, Button } from 'antd';
-import { Http } from '@/utils';
+import api from '@/api';
 
 export default function Example1Page() {
   // 接口测试
   const sendMessage = async () => {
-    const huaOss = await Http({
-      url: '/groupbuy/upload/getHwObsTempToken',
-    });
+    const huaOss = await api.getOssToken({});
     console.log(huaOss);
   };
   return (
