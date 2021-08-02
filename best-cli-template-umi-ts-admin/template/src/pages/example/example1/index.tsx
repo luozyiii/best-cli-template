@@ -13,11 +13,11 @@ export default function Example1Page() {
   const modalRef = useRef<any>(null);
   // 接口测试
   const sendMessage = async () => {
-    const huaOss = await api.getOssToken({});
+    const huaOss = await api.getHotSearch({});
     console.log(huaOss);
   };
   const sendError = async () => {
-    const res = await api.getColumn({});
+    const res = await api.getAbc({});
     console.log(res);
   };
   // 更新全局数据

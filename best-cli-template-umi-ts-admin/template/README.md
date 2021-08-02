@@ -1,15 +1,23 @@
-# umi project
+# 项目
+> Umi + TS 中后台管理系统模版
 
-## Getting Started
+## 使用
 
-Install dependencies,
+- 安装
 
 ```bash
 $ yarn
 ```
 
-Start the dev server,
+- 启动服务
 
 ```bash
 $ yarn start
 ```
+
+## 基础示例
+- 登录
+- 接口
+- 表单(基础和校验)
+- 基础弹窗
+- 菜单权限

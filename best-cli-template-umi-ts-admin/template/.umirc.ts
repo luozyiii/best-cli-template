@@ -13,7 +13,7 @@ export default defineConfig({
   mock: false,
   proxy: {
     '/api': {
-      target: 'http://admin.chenxuan100.cn',
+      target: 'http://112.74.201.142:7001',
       changeOrigin: true,
       pathRewrite: {
         '^/api': '/',
