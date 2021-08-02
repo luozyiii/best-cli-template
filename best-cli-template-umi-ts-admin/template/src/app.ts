@@ -1,23 +1,30 @@
 import { history } from 'umi';
+import { isObject } from '@leslie0403/utils';
 
 export function getInitialState() {
-  return { ...getGlobalInfo() };
+  return getGlobalInfo();
 }
 
 // 全局数据(基础用户信息)
 function getGlobalInfo() {
   let token: any = localStorage.getItem('token');
+  let baseInfo = {
+    userId: '',
+    name: '',
+    avatar: '',
+    role: '',
+    isLogin: false, // 是否登录
+  };
   let globalInfo;
   if (token) {
-    globalInfo = JSON.parse(decodeURIComponent(token));
+    let _token = JSON.parse(decodeURIComponent(token));
+    if (isObject(_token)) {
+      globalInfo = _token;
+    } else {
+      globalInfo = { ...baseInfo };
+    }
   } else {
-    globalInfo = {
-      userId: '',
-      name: '',
-      avatar: '',
-      role: '',
-      isLogin: token ? true : false, // 是否登录
-    };
+    globalInfo = { ...baseInfo };
   }
   return globalInfo;
 }
