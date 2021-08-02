@@ -1,13 +1,16 @@
+import { useRef } from 'react';
 import { Card, Button, Select } from 'antd';
 import { useModel } from 'umi';
 import api from '@/api';
 const { Option } = Select;
+import BasicModal from './components/BasicModal';
 
 import './index.less';
 
 export default function Example1Page() {
   const { setInitialState } = useModel('@@initialState');
   const { city } = useModel('city', (model) => ({ city: model.city }));
+  const modalRef = useRef<any>(null);
   // 接口测试
   const sendMessage = async () => {
     const huaOss = await api.getOssToken({});
@@ -30,6 +33,10 @@ export default function Example1Page() {
     console.log(`selected ${value}`);
   };
 
+  const handleBasicModal = () => {
+    modalRef.current && modalRef.current.showModal();
+  };
+
   return (
     <Card className="example">
       <Card bordered={false}>
@@ -42,6 +49,9 @@ export default function Example1Page() {
         <Button type="primary" onClick={updateGlobalData}>
           更新全局数据
         </Button>
+        <Button type="primary" onClick={() => handleBasicModal()}>
+          基础弹窗
+        </Button>
       </Card>
       <Card bordered={false}>
         <Select style={{ width: '180px' }} defaultValue={city[0].id} onChange={handleChange}>
@@ -53,6 +63,7 @@ export default function Example1Page() {
             ))}
         </Select>
       </Card>
+      <BasicModal ref={modalRef}></BasicModal>
     </Card>
   );
 }
