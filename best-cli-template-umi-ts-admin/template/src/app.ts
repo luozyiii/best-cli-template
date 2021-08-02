@@ -1,16 +1,32 @@
-import avatarSrc from '@/assets/avatar.jpg';
+import { history } from 'umi';
+
 export function getInitialState() {
-  return {
-    userId: '18825040666',
-    name: 'Leslie Luo',
-    avatar: avatarSrc,
-    role: 'admin',
-    isLogin: true, // 是否登录
-  };
+  return { ...getGlobalInfo() };
+}
+
+// 全局数据(基础用户信息)
+function getGlobalInfo() {
+  let token: any = localStorage.getItem('token');
+  let globalInfo;
+  if (token) {
+    globalInfo = JSON.parse(decodeURIComponent(token));
+  } else {
+    globalInfo = {
+      userId: '',
+      name: '',
+      avatar: '',
+      role: '',
+      isLogin: token ? true : false, // 是否登录
+    };
+  }
+  return globalInfo;
 }
 
 export const layout = {
   logout: () => {
-    alert('退出登录成功');
+    localStorage.clear();
+    history.push({
+      pathname: '/login',
+    });
   },
 };

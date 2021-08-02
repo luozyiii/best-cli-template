@@ -1,11 +1,7 @@
-export default function Http({
-  url,
-  method = 'post',
-  headers = {},
-  body = {},
-  setLoading,
-  setResult,
-}: any) {
+import { history } from 'umi';
+import { message } from 'antd';
+
+export default function Http({ url, method = 'post', headers = {}, body = {}, setLoading, setResult }: any) {
   setLoading && setLoading(true);
 
   const token = localStorage.getItem('token');
@@ -40,15 +36,18 @@ export default function Http({
           setResult && setResult(res.data);
         } else {
           if (res.status === 1001) {
-            location.href = '/login?from=' + location.pathname;
             localStorage.clear();
+            history.push({
+              pathname: '/login',
+            });
           }
-          console.log(res.errMsg);
+          message.error(res.errMsg);
           reject(res.errMsg);
         }
       })
       .catch((err) => {
         console.log(err);
+        message.error('网络异常，请稍后重试');
         reject(err);
       })
       .finally(() => {
