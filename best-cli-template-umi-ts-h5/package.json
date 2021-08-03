@@ -1,0 +1,12 @@
+{
+  "name": "best-cli-template-umi-ts-h5",
+  "version": "1.0.0",
+  "description": "Umi + TS H5项目模板",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
