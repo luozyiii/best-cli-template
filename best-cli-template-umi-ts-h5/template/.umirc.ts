@@ -8,6 +8,9 @@ export default defineConfig({
     type: 'none',
   },
   routes: [...route],
+  dynamicImport: {
+    loading: '@/components/Loading',
+  },
   fastRefresh: {},
   extraPostCSSPlugins: [
     pxtoviewport({

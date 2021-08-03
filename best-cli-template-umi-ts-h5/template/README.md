@@ -16,4 +16,12 @@ $ yarn start
 ```
 
 ## 基础示例
-- 登录
+- 登录(admin/123456)
+- 基本用法
+- 基础表单
+
+## 移动端适配
+[postcss-px-to-viewport](https://www.npmjs.com/package/postcss-px-to-viewport)
+
+## UI 组件
+[semantic-ui-react](https://react.semantic-ui.com/usage)
