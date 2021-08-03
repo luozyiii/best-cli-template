@@ -9,11 +9,11 @@ const route = [
         name: '基础用法',
         component: '@/pages/example/example1',
       },
-      // {
-      //   path: 'form',
-      //   name: '表单用法',
-      //   component: '@/pages/example/form',
-      // },
+      {
+        path: 'form',
+        name: '表单用法',
+        component: '@/pages/example/form',
+      },
       {
         path: 'example2',
         name: '权限菜单',
