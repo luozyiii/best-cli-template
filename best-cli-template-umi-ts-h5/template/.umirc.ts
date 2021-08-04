@@ -7,6 +7,16 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
+  mock: false,
+  proxy: {
+    '/api': {
+      target: 'http://112.74.201.142:7001',
+      changeOrigin: true,
+      pathRewrite: {
+        '^/api': '/',
+      },
+    },
+  },
   routes: [...route],
   dynamicImport: {
     loading: '@/components/Loading',
