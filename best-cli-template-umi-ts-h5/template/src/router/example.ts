@@ -16,8 +16,9 @@ const route = [
       },
       {
         path: 'example2',
-        name: '权限菜单',
+        name: '权限路由',
         component: '@/pages/example/example2',
+        wrappers: ['@/wrappers/authAdmin'],
       },
     ],
   },

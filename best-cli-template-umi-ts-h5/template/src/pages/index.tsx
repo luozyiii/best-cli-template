@@ -38,19 +38,19 @@ export default function IndexPage() {
           <Button
             className="home-btn"
             secondary
-            content="权限路由"
+            content="权限路由(无权限)"
             primary
             onClick={() => gotoPage('/example/example2')}
           />
         </List.Item>
         {!initialState.isLogin && (
           <List.Item>
-            <Button className="home-btn" secondary content="登录" primary onClick={() => gotoPage('/login')} />
+            <Button className="home-btn" basic color="black" content="登录" onClick={() => gotoPage('/login')} />
           </List.Item>
         )}
         {initialState.isLogin && (
           <List.Item>
-            <Button className="home-btn" secondary content="退出登录" primary onClick={() => logout()} />
+            <Button className="home-btn" basic color="black" content="退出登录" onClick={() => logout()} />
           </List.Item>
         )}
       </List>
