@@ -1,9 +1,12 @@
 {
   "name": "best-cli-template-umi-ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Umi标准的TS模板",
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "files": [
+    "template/**"
+  ]
 }

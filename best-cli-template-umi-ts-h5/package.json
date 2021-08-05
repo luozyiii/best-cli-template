@@ -1,6 +1,6 @@
 {
   "name": "best-cli-template-umi-ts-h5",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Umi + TS H5项目模板",
   "main": "index.js",
   "scripts": {
@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "files": [
+    "template/**"
+  ]
 }
