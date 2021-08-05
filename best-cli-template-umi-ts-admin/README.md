@@ -1,19 +1,5 @@
 # Umi3 + TS 中后台项目模板
 
-## 使用
-
-- 安装依赖
-
-```bash
-$ yarn
-```
-
-- 启动服务
-
-```bash
-$ yarn start
-```
-
 ## 架构目录
 ```bash
 ├── .vscode                     # vscode 自定义工作区
@@ -46,10 +32,3 @@ $ yarn start
 ├── tsconfig.json               # typescript 配置
 └── typings.d.ts                # 定义ts模块声明
 ```
-
-## 基础示例
-- 登录
-- 接口
-- 表单(基础和校验)
-- 基础弹窗
-- 菜单权限

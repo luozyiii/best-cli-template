@@ -1,19 +1,5 @@
 # Umi3 基础模板
 
-## 使用
-
-- 安装依赖
-
-```bash
-$ yarn
-```
-
-- 启动服务
-
-```bash
-$ yarn start
-```
-
 ## 架构目录
 ```bash
 ├── .vscode                     # vscode 自定义工作区

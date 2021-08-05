@@ -1,18 +1,4 @@
-# Umi3 + TS 中后台项目模板
-
-## 使用
-
-- 安装依赖
-
-```bash
-$ yarn
-```
-
-- 启动服务
-
-```bash
-$ yarn start
-```
+# Umi3 + TS H5项目模板
 
 ## 架构目录
 ```bash
@@ -22,8 +8,7 @@ $ yarn start
 ├── public                      # 资源文件
 ├── src # 源码目录
 │   ├── api                     # 接口
-│   ├── assets                  # 资源
-│   ├── hooks                   # react hooks 方法
+│   ├── components              # 组件
 │   ├── models                  # 数据流
 │   ├── pages                   # 页面组件
 │   │   │── example             # 示例代码
@@ -33,6 +18,7 @@ $ yarn start
 │   │   └── index.tsx           # 首页
 │   ├── router                  # 路由配置
 │   ├── utils                   # 工具库
+│   ├── wrappers                # 高阶组件-wrappers
 │   ├── access.ts               # 权限控制
 │   ├── app.ts                  # 运行时配置
 │   └── global.less             # 全局样式
@@ -46,10 +32,3 @@ $ yarn start
 ├── tsconfig.json               # typescript 配置
 └── typings.d.ts                # 定义ts模块声明
 ```
-
-## 基础示例
-- 登录
-- 接口
-- 表单(基础和校验)
-- 基础弹窗
-- 菜单权限

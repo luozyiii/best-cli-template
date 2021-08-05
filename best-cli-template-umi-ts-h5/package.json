@@ -1,15 +1,15 @@
 {
   "name": "best-cli-template-umi-ts-h5",
-  "version": "1.0.1",
-  "description": "Umi + TS H5项目模板",
-  "main": "index.js",
+  "version": "1.0.2",
+  "description": "Umi3 + TS H5项目模板",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "leslie <924361501@qq.com>",
   "license": "ISC",
   "files": [
-    "template/**"
+    "template/**",
+    "README.md"
   ]
 }
