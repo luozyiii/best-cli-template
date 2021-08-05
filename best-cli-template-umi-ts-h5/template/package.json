@@ -1,6 +1,6 @@
 {
-  "name": "best-cli-template-umi-ts-h5",
-  "version": "1.0.0",
+  "name": "<%= name %>",
+  "version": "<%= version %>",
   "private": true,
   "scripts": {
     "start": "umi dev",
@@ -23,13 +23,14 @@
   },
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
+    "@leslie0403/utils": "^1.0.6",
     "postcss-px-to-viewport": "^1.1.1",
     "react": "17.x",
     "react-dom": "17.x",
+    "rmc-notification": "^1.0.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",
-    "umi": "^3.5.14",
-    "@leslie0403/utils": "^1.0.6"
+    "umi": "^3.5.14"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",

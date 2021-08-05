@@ -1,0 +1,55 @@
+@hd: 2px;
+@toastPrefixCls: am-toast;
+@toast-zindex: 1888;
+@font-size-base: 14 * @hd;
+@toast-fill: rgba(58, 58, 58, 0.9);
+@color-text-base-inverse: #fff;
+@radius-sm: 3 * @hd;
+@v-spacing-md: 9 * @hd;
+@h-spacing-lg: 15 * @hd;
+@line-height-paragraph: 1.5; // 多行行高
+
+.@{toastPrefixCls} {
+  position: fixed;
+  width: 100%;
+  z-index: @toast-zindex;
+  font-size: @font-size-base;
+  text-align: center;
+
+  > span {
+    max-width: 50%;
+  }
+
+  &&-mask {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    transform: translateZ(1px);
+  }
+
+  &&-nomask {
+    position: fixed;
+    max-width: 50%;
+    width: auto;
+    left: 50%;
+    top: 50%;
+    transform: translateZ(1px);
+    .@{toastPrefixCls}-notice {
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  &-notice-content {
+    .@{toastPrefixCls}-text {
+      min-width: 60 * @hd;
+      border-radius: @radius-sm;
+      color: @color-text-base-inverse;
+      background-color: @toast-fill;
+      line-height: @line-height-paragraph;
+      padding: @v-spacing-md @h-spacing-lg;
+    }
+  }
+}

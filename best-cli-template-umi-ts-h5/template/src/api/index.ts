@@ -1,8 +1,8 @@
-import request from '@/utils/http';
+import { Http } from '@/utils';
 
 const api = {
-  getHotSearch: (params: any) => request('/hot/search', { method: 'post', params }),
-  getAbc: (params: any) => request('/abc', { method: 'get', params }),
+  getHotSearch: (params: any) => Http('/hot/search', { method: 'post', params }),
+  getAbc: (params: any) => Http('/abc', { method: 'get', params }),
 };
 
 export default api;

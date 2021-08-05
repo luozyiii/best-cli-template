@@ -1,6 +1,7 @@
 import { useModel } from 'umi';
 import api from '@/api';
 import { Container, Button, Select, List } from 'semantic-ui-react';
+import { Toast } from '@/components';
 
 import './index.less';
 
@@ -18,6 +19,10 @@ export default function Example1Page() {
   const sendError = async () => {
     const res = await api.getAbc({ a: 1 });
     console.log(res);
+  };
+
+  const showToast = () => {
+    Toast.show('这是一条toast提示', 3);
   };
 
   // 更新全局数据
@@ -41,6 +46,9 @@ export default function Example1Page() {
         </List.Item>
         <List.Item>
           <Button color="youtube" content="发送请求(错误)" onClick={sendError} />
+        </List.Item>
+        <List.Item>
+          <Button secondary content="自定义提示" primary onClick={showToast} />
         </List.Item>
         <List.Item>
           <Select placeholder="全局数据" options={city} />
