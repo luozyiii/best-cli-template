@@ -1,0 +1,12 @@
+{
+  "name": "best-cli-template-taro",
+  "version": "1.0.0",
+  "description": "Taro 小程序模板",
+  "keywords": [],
+  "author": "leslie <924361501@qq.com>",
+  "license": "ISC",
+  "files": [
+    "template/**",
+    "README.md"
+  ]
+}
