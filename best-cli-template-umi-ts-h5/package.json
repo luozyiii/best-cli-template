@@ -1,6 +1,6 @@
 {
   "name": "best-cli-template-umi-ts-h5",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Umi3 + TS H5项目模板",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
