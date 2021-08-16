@@ -1,0 +1,16 @@
+{
+    "name": "best-cli-template-umi-ts-ssr",
+    "version": "1.0.0",
+    "description": "Umi3 + TS + SSR 项目模板",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "leslie <924361501@qq.com>",
+    "license": "ISC",
+    "files": [
+      "template/**",
+      "README.md"
+    ]
+  }
+  
