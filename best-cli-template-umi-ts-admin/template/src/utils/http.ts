@@ -19,8 +19,8 @@ export default function Http({ url, method = 'post', headers = {}, body = {}, se
     Object.keys(body).forEach((key) => {
       urlParams += key + '=' + body[key] + '&';
     });
-    urlParams = urlParams.substring(0, urlParams.length - 1);
     if (urlParams) {
+      urlParams = urlParams.substring(0, urlParams.length - 1);
       urlParams = '?' + urlParams;
     }
     params = undefined;
