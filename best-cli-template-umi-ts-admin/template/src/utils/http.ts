@@ -14,7 +14,15 @@ export default function Http({ url, method = 'post', headers = {}, body = {}, se
   defaultHeader = token ? { ...defaultHeader, token } : defaultHeader;
 
   let params: any;
+  let urlParams: string = '';
   if (method.toUpperCase() === 'GET') {
+    Object.keys(body).forEach((key) => {
+      urlParams += key + '=' + body[key] + '&';
+    });
+    urlParams = urlParams.substring(0, urlParams.length - 1);
+    if (urlParams) {
+      urlParams = '?' + urlParams;
+    }
     params = undefined;
   } else {
     params = {
@@ -28,7 +36,7 @@ export default function Http({ url, method = 'post', headers = {}, body = {}, se
   }
 
   return new Promise((resolve, reject) => {
-    fetch(`/api${url}`, params)
+    fetch(`/api${url}${urlParams}`, params)
       .then((res) => res.json())
       .then((res) => {
         if (res.status === 200) {

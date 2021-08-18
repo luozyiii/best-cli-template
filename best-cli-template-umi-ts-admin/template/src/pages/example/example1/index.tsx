@@ -17,7 +17,7 @@ export default function Example1Page() {
     console.log(huaOss);
   };
   const sendError = async () => {
-    const res = await api.getAbc({});
+    const res = await api.getAbc({ abc: 'abc' });
     console.log(res);
   };
   // 更新全局数据
